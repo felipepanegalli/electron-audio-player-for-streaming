@@ -17,13 +17,13 @@ start()
 
 // Botão que diminui o volume
 btnVolLess.addEventListener('click', function () {
-    player.volume = player.volume - 0.1;
+    player.volume = player.volume - 0.01;
     currentVolume()
 });
 
 // Botão que aumenta o volume
 btnVolMore.addEventListener('click', function () {
-    player.volume = player.volume + 0.1;
+    player.volume = player.volume + 0.01;
     currentVolume()
 });
 
@@ -39,7 +39,7 @@ btnPause.addEventListener('click', function () {
 
 // Controla o text do volume
 function currentVolume() {
-    lblVolume.innerText = Math.round(player.volume * 10)
+    lblVolume.innerText = Math.round(player.volume * 100)
 }
 
 // Verifica o tempo corrente da música
@@ -57,7 +57,7 @@ function timeExecute() {
 
 // Configurações executadas ao iniciar
 function start() {
-    player.volume = .5; //O volume inicia em 50%
+    player.volume = .2; //O volume inicia em 20%
     currentVolume()
     currentTime()
 }

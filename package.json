@@ -1,0 +1,29 @@
+{
+  "name": "audio-player-for-streaming",
+  "version": "0.0.2",
+  "description": "Pequeno exemplo de Player de Áudio de streaming. Uso de Caso para a HunterFM",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . HunterFm --platform win32 --arch x64 --out dist/",
+    "setup": "electron-installer-windows --src dist/HunterFm-win32-x64/ --dest dist/installers/"
+  },
+  "repository": "https://github.com/felipepanegalli/electron-audio-player-for-streaming",
+  "keywords": [
+    "electron",
+    "player",
+    "audio",
+    "hunterfm",
+    "hunter-fm"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^8.0.0"
+  },
+  "dependencies": {
+    "electron-installer-windows": "^3.0.0",
+    "electron-packager": "^14.2.1",
+    "electron-reload": "^1.5.0"
+  }
+}
